@@ -12,9 +12,6 @@ def run_viterbi(emission_scores, trans_scores, start_scores, end_scores):
     - Start transition scores (S -> Y), as an Lx1 array
     - End transition scores (Y -> E), as an Lx1 array
 
-    You have to return a tuple (s,y), where:
-    - s is the score of the best sequence
-    - y is a size N array of integers representing the best sequence.
     """
     L = start_scores.shape[0]
     assert end_scores.shape[0] == L
